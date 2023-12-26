@@ -506,7 +506,7 @@ section {
   opacity: 1;
   left: 0;
   right: 0;
-  bottom: -60px;
+  bottom: -72px;
   z-index: 3;
   position: absolute;
   transition: all ease-in-out 0.3s;
@@ -520,6 +520,7 @@ section {
   background: rgba(20, 157, 221, 0.75);
   transition: 0.3s;
   width: 50%;
+  border-radius: 20px;
 }
 .portfolio .portfolio-wrap .portfolio-links a:hover {
   background: rgba(20, 157, 221, 0.95);
@@ -961,3 +962,75 @@ section {
   width: 100px;
   height: auto;
 } */
+
+
+/* ***************26/12/2023******************** */
+
+
+
+.portfolio-item {
+  margin-bottom: 30px; /* Adjust the margin between portfolio items */
+}
+
+
+.portfolio-wrap {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adjust box shadow values as needed */
+  border-radius: 10px;
+}
+.portfolio-wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
+  max-height: 200px; /* Adjust the max height of each item, change as needed */
+  object-fit: cover; /* Apply cover effect to the image */
+}
+
+.portfolio-links {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  border-radius: 10px;
+  transition: opacity 0.3s ease;
+}
+
+.portfolio-wrap:hover .portfolio-links {
+  opacity: 1;
+}
+
+.portfolio-links a {
+  color: #fff;
+  font-size: 24px;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.portfolio-links a:hover {
+  color: #3498db; /* Change the color on hover */
+}
+.projectTitle{
+  padding: 10px;
+}
+
+.downloadResume {
+  text-align: center;
+}
+
+.btnDownload:hover {
+  color: #fff;
+  background-color: #3f545d !important;
+  border-color: #3f545d !important;
+}
+
+.btnDownload {
+  color: #fff;
+  background-color: #149ddd !important;
+  border-color: #149ddd !important;
+}
